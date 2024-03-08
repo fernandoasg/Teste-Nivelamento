@@ -23,8 +23,11 @@ public class Program
 
     public static int getTotalScoredGoals(string team, int year)
     {
+        string queryParams = "?year=" + year + "&team=" + team;
+        string result = HttpClientService.GetAsync(queryParams);
+
+        Console.WriteLine(result);
         
         return 0;
     }
-
 }
