@@ -13,7 +13,7 @@ namespace Questao2.Models
 
         public int total { get; set; }
 
-        public total_pages { get; set; }
+        public int total_pages { get; set; }
 
         public object data { get; set; }
     }

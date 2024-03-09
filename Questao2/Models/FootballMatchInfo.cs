@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Questao2.Models
 {
-    public class FootbalMatchInfo
+    public class FootballMatchInfo
     {
         public string competition { get; set; }
 

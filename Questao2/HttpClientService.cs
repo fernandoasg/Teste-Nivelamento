@@ -9,14 +9,14 @@ namespace Questao2
     {
         private static HttpClient httpClient = new()
         {
-            BaseAddress = new Uri("https://jsonmock.hackerrank.com/api/football_matches");
-        }
+            BaseAddress = new Uri("https://jsonmock.hackerrank.com/api/football_matches")
+        };
 
-        public async Task<string> GetAsync(string urlParams)
+        public static async Task<string> GetRequest(string urlParams)
         {
-            HttpPonseMessage response = await httpClient.GetAsync(urlParams);
+            string url = httpClient.BaseAddress + urlParams;
 
-            response.EnsureSuccessStatusCode().WriteRequestToConsole();
+            HttpResponseMessage response = await httpClient.GetAsync(url);
 
             var jsonResponse = await response.Content.ReadAsStringAsync();
 
