@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Questao2",
-    "\\Questao2\\Models"
+    "\\Questao2\\Models",
+    "\\Questao5",
+    "\\Questao5\\Controllers",
+    "\\Questao5\\Infrastructure",
+    "\\Questao5\\Infrastructure\\Services",
+    "\\Questao5\\Infrastructure\\Services\\Controllers",
+    "\\Questao5\\Infrastructure\\Sqlite"
   ],
-  "SelectedNode": "\\Questao2\\Program.cs",
+  "SelectedNode": "\\Questao5\\Models",
   "PreviewInSolutionExplorer": false
 }
